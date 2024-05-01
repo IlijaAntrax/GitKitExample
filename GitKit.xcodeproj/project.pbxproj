@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		652DB5642BE263D0008376AD /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652DB5632BE263D0008376AD /* AuthViewModel.swift */; };
+		652DB5672BE26BAD008376AD /* Colors+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652DB5662BE26BAD008376AD /* Colors+.swift */; };
 		65E4C6DE2BE2487C00181D90 /* GitKitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E4C6DD2BE2487C00181D90 /* GitKitApp.swift */; };
-		65E4C6E02BE2487C00181D90 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E4C6DF2BE2487C00181D90 /* ContentView.swift */; };
+		65E4C6E02BE2487C00181D90 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E4C6DF2BE2487C00181D90 /* LoginView.swift */; };
 		65E4C6E22BE2487D00181D90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65E4C6E12BE2487D00181D90 /* Assets.xcassets */; };
 		65E4C6E52BE2487D00181D90 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65E4C6E42BE2487D00181D90 /* Preview Assets.xcassets */; };
 		65E4C6EF2BE2487D00181D90 /* GitKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E4C6EE2BE2487D00181D90 /* GitKitTests.swift */; };
@@ -36,9 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		652DB5632BE263D0008376AD /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		652DB5662BE26BAD008376AD /* Colors+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Colors+.swift"; sourceTree = "<group>"; };
 		65E4C6DA2BE2487C00181D90 /* GitKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65E4C6DD2BE2487C00181D90 /* GitKitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitKitApp.swift; sourceTree = "<group>"; };
-		65E4C6DF2BE2487C00181D90 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		65E4C6DF2BE2487C00181D90 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		65E4C6E12BE2487D00181D90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65E4C6E42BE2487D00181D90 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		65E4C6EA2BE2487D00181D90 /* GitKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,6 +79,59 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		652DB55D2BE2637E008376AD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		652DB55E2BE26385008376AD /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				652DB5632BE263D0008376AD /* AuthViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		652DB55F2BE2638C008376AD /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		652DB5602BE26393008376AD /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		652DB5612BE2639B008376AD /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				652DB5602BE26393008376AD /* DataSource */,
+				652DB55F2BE2638C008376AD /* Repository */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		652DB5622BE263B5008376AD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		652DB5652BE26BA1008376AD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				652DB5662BE26BAD008376AD /* Colors+.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		65E4C6D12BE2487C00181D90 = {
 			isa = PBXGroup;
 			children = (
@@ -98,8 +155,13 @@
 		65E4C6DC2BE2487C00181D90 /* GitKit */ = {
 			isa = PBXGroup;
 			children = (
+				652DB5652BE26BA1008376AD /* Extensions */,
+				652DB5612BE2639B008376AD /* Networking */,
+				652DB55D2BE2637E008376AD /* Models */,
+				652DB55E2BE26385008376AD /* ViewModels */,
+				652DB5622BE263B5008376AD /* Views */,
 				65E4C6DD2BE2487C00181D90 /* GitKitApp.swift */,
-				65E4C6DF2BE2487C00181D90 /* ContentView.swift */,
+				65E4C6DF2BE2487C00181D90 /* LoginView.swift */,
 				65E4C6E12BE2487D00181D90 /* Assets.xcassets */,
 				65E4C6E32BE2487D00181D90 /* Preview Content */,
 			);
@@ -268,8 +330,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65E4C6E02BE2487C00181D90 /* ContentView.swift in Sources */,
+				65E4C6E02BE2487C00181D90 /* LoginView.swift in Sources */,
+				652DB5672BE26BAD008376AD /* Colors+.swift in Sources */,
 				65E4C6DE2BE2487C00181D90 /* GitKitApp.swift in Sources */,
+				652DB5642BE263D0008376AD /* AuthViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
