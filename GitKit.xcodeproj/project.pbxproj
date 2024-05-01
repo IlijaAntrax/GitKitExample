@@ -9,6 +9,37 @@
 /* Begin PBXBuildFile section */
 		652DB5642BE263D0008376AD /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652DB5632BE263D0008376AD /* AuthViewModel.swift */; };
 		652DB5672BE26BAD008376AD /* Colors+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652DB5662BE26BAD008376AD /* Colors+.swift */; };
+		652DB5692BE28112008376AD /* UserRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652DB5682BE28112008376AD /* UserRemoteDataSource.swift */; };
+		652DB5712BE28689008376AD /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652DB56B2BE28689008376AD /* NetworkError.swift */; };
+		652DB5722BE28689008376AD /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652DB56C2BE28689008376AD /* Endpoint.swift */; };
+		652DB5732BE28689008376AD /* ResponseDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652DB56D2BE28689008376AD /* ResponseDecoder.swift */; };
+		652DB5742BE28689008376AD /* NetworkConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652DB56E2BE28689008376AD /* NetworkConfig.swift */; };
+		652DB5752BE28689008376AD /* AlamofireService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652DB56F2BE28689008376AD /* AlamofireService.swift */; };
+		652DB5762BE28689008376AD /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652DB5702BE28689008376AD /* NetworkLogger.swift */; };
+		652DB57A2BE287D3008376AD /* AFDataResponse+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652DB5772BE287D2008376AD /* AFDataResponse+.swift */; };
+		652DB57B2BE287D3008376AD /* Dictionary+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652DB5782BE287D2008376AD /* Dictionary+.swift */; };
+		652DB57C2BE287D3008376AD /* Encodable+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652DB5792BE287D3008376AD /* Encodable+.swift */; };
+		652DB5812BE289BC008376AD /* DtoMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652DB5802BE289BC008376AD /* DtoMapper.swift */; };
+		652DB5832BE289E9008376AD /* UserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652DB5822BE289E9008376AD /* UserResponse.swift */; };
+		652DB5852BE28AD9008376AD /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652DB5842BE28AD9008376AD /* UserModel.swift */; };
+		652DB5892BE28D72008376AD /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652DB5882BE28D72008376AD /* UserRepository.swift */; };
+		652DB58B2BE28DB4008376AD /* ReposRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652DB58A2BE28DB4008376AD /* ReposRemoteDataSource.swift */; };
+		652DB58D2BE28DEF008376AD /* RepositoryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652DB58C2BE28DEF008376AD /* RepositoryResponse.swift */; };
+		652DB58F2BE28E94008376AD /* RepositoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652DB58E2BE28E94008376AD /* RepositoryModel.swift */; };
+		652DB5912BE28EA1008376AD /* CommitResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652DB5902BE28EA1008376AD /* CommitResponse.swift */; };
+		652DB5932BE28EDE008376AD /* CommitModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652DB5922BE28EDE008376AD /* CommitModel.swift */; };
+		652DB5952BE294BD008376AD /* UserLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652DB5942BE294BD008376AD /* UserLocalDataSource.swift */; };
+		652DB5992BE2972F008376AD /* GetUserDataUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652DB5982BE2972F008376AD /* GetUserDataUseCase.swift */; };
+		652DB59B2BE29841008376AD /* GetUsernameUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652DB59A2BE29841008376AD /* GetUsernameUseCase.swift */; };
+		652DB59D2BE29848008376AD /* SaveUsernameUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652DB59C2BE29848008376AD /* SaveUsernameUseCase.swift */; };
+		652DB59F2BE29A2C008376AD /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652DB59E2BE29A2C008376AD /* AppContainer.swift */; };
+		652DB5A32BE2A173008376AD /* UserDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652DB5A22BE2A173008376AD /* UserDetailsView.swift */; };
+		652DB5A52BE2A305008376AD /* View+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652DB5A42BE2A305008376AD /* View+.swift */; };
+		652DB5A72BE2A59E008376AD /* ReposRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652DB5A62BE2A59E008376AD /* ReposRepository.swift */; };
+		652DB5A92BE2A701008376AD /* GetRepositoriesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652DB5A82BE2A701008376AD /* GetRepositoriesUseCase.swift */; };
+		652DB5AB2BE2A70E008376AD /* GetCommitsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652DB5AA2BE2A70E008376AD /* GetCommitsUseCase.swift */; };
+		652DB5AD2BE2A7E6008376AD /* ReposViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652DB5AC2BE2A7E6008376AD /* ReposViewModel.swift */; };
+		652DB5AF2BE2A7F9008376AD /* CommitsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652DB5AE2BE2A7F9008376AD /* CommitsViewModel.swift */; };
 		65E4C6DE2BE2487C00181D90 /* GitKitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E4C6DD2BE2487C00181D90 /* GitKitApp.swift */; };
 		65E4C6E02BE2487C00181D90 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E4C6DF2BE2487C00181D90 /* LoginView.swift */; };
 		65E4C6E22BE2487D00181D90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65E4C6E12BE2487D00181D90 /* Assets.xcassets */; };
@@ -40,6 +71,37 @@
 /* Begin PBXFileReference section */
 		652DB5632BE263D0008376AD /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		652DB5662BE26BAD008376AD /* Colors+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Colors+.swift"; sourceTree = "<group>"; };
+		652DB5682BE28112008376AD /* UserRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRemoteDataSource.swift; sourceTree = "<group>"; };
+		652DB56B2BE28689008376AD /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		652DB56C2BE28689008376AD /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		652DB56D2BE28689008376AD /* ResponseDecoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseDecoder.swift; sourceTree = "<group>"; };
+		652DB56E2BE28689008376AD /* NetworkConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkConfig.swift; sourceTree = "<group>"; };
+		652DB56F2BE28689008376AD /* AlamofireService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireService.swift; sourceTree = "<group>"; };
+		652DB5702BE28689008376AD /* NetworkLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkLogger.swift; sourceTree = "<group>"; };
+		652DB5772BE287D2008376AD /* AFDataResponse+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AFDataResponse+.swift"; sourceTree = "<group>"; };
+		652DB5782BE287D2008376AD /* Dictionary+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+.swift"; sourceTree = "<group>"; };
+		652DB5792BE287D3008376AD /* Encodable+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Encodable+.swift"; sourceTree = "<group>"; };
+		652DB5802BE289BC008376AD /* DtoMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DtoMapper.swift; sourceTree = "<group>"; };
+		652DB5822BE289E9008376AD /* UserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResponse.swift; sourceTree = "<group>"; };
+		652DB5842BE28AD9008376AD /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		652DB5882BE28D72008376AD /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		652DB58A2BE28DB4008376AD /* ReposRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposRemoteDataSource.swift; sourceTree = "<group>"; };
+		652DB58C2BE28DEF008376AD /* RepositoryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryResponse.swift; sourceTree = "<group>"; };
+		652DB58E2BE28E94008376AD /* RepositoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryModel.swift; sourceTree = "<group>"; };
+		652DB5902BE28EA1008376AD /* CommitResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitResponse.swift; sourceTree = "<group>"; };
+		652DB5922BE28EDE008376AD /* CommitModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitModel.swift; sourceTree = "<group>"; };
+		652DB5942BE294BD008376AD /* UserLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocalDataSource.swift; sourceTree = "<group>"; };
+		652DB5982BE2972F008376AD /* GetUserDataUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUserDataUseCase.swift; sourceTree = "<group>"; };
+		652DB59A2BE29841008376AD /* GetUsernameUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetUsernameUseCase.swift; sourceTree = "<group>"; };
+		652DB59C2BE29848008376AD /* SaveUsernameUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveUsernameUseCase.swift; sourceTree = "<group>"; };
+		652DB59E2BE29A2C008376AD /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
+		652DB5A22BE2A173008376AD /* UserDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsView.swift; sourceTree = "<group>"; };
+		652DB5A42BE2A305008376AD /* View+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+.swift"; sourceTree = "<group>"; };
+		652DB5A62BE2A59E008376AD /* ReposRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposRepository.swift; sourceTree = "<group>"; };
+		652DB5A82BE2A701008376AD /* GetRepositoriesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRepositoriesUseCase.swift; sourceTree = "<group>"; };
+		652DB5AA2BE2A70E008376AD /* GetCommitsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCommitsUseCase.swift; sourceTree = "<group>"; };
+		652DB5AC2BE2A7E6008376AD /* ReposViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposViewModel.swift; sourceTree = "<group>"; };
+		652DB5AE2BE2A7F9008376AD /* CommitsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitsViewModel.swift; sourceTree = "<group>"; };
 		65E4C6DA2BE2487C00181D90 /* GitKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65E4C6DD2BE2487C00181D90 /* GitKitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitKitApp.swift; sourceTree = "<group>"; };
 		65E4C6DF2BE2487C00181D90 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -82,6 +144,9 @@
 		652DB55D2BE2637E008376AD /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				652DB5842BE28AD9008376AD /* UserModel.swift */,
+				652DB58E2BE28E94008376AD /* RepositoryModel.swift */,
+				652DB5922BE28EDE008376AD /* CommitModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -90,6 +155,8 @@
 			isa = PBXGroup;
 			children = (
 				652DB5632BE263D0008376AD /* AuthViewModel.swift */,
+				652DB5AC2BE2A7E6008376AD /* ReposViewModel.swift */,
+				652DB5AE2BE2A7F9008376AD /* CommitsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -97,6 +164,8 @@
 		652DB55F2BE2638C008376AD /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				652DB5882BE28D72008376AD /* UserRepository.swift */,
+				652DB5A62BE2A59E008376AD /* ReposRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -104,22 +173,29 @@
 		652DB5602BE26393008376AD /* DataSource */ = {
 			isa = PBXGroup;
 			children = (
+				652DB5682BE28112008376AD /* UserRemoteDataSource.swift */,
+				652DB58A2BE28DB4008376AD /* ReposRemoteDataSource.swift */,
+				652DB5942BE294BD008376AD /* UserLocalDataSource.swift */,
 			);
 			path = DataSource;
 			sourceTree = "<group>";
 		};
-		652DB5612BE2639B008376AD /* Networking */ = {
+		652DB5612BE2639B008376AD /* Api */ = {
 			isa = PBXGroup;
 			children = (
+				652DB56A2BE28673008376AD /* Service */,
 				652DB5602BE26393008376AD /* DataSource */,
 				652DB55F2BE2638C008376AD /* Repository */,
+				652DB5972BE29716008376AD /* UseCase */,
 			);
-			path = Networking;
+			path = Api;
 			sourceTree = "<group>";
 		};
 		652DB5622BE263B5008376AD /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				65E4C6DF2BE2487C00181D90 /* LoginView.swift */,
+				652DB5A22BE2A173008376AD /* UserDetailsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -127,9 +203,67 @@
 		652DB5652BE26BA1008376AD /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				652DB5772BE287D2008376AD /* AFDataResponse+.swift */,
+				652DB5782BE287D2008376AD /* Dictionary+.swift */,
+				652DB5792BE287D3008376AD /* Encodable+.swift */,
 				652DB5662BE26BAD008376AD /* Colors+.swift */,
+				652DB5A42BE2A305008376AD /* View+.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		652DB56A2BE28673008376AD /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				652DB56F2BE28689008376AD /* AlamofireService.swift */,
+				652DB56C2BE28689008376AD /* Endpoint.swift */,
+				652DB56E2BE28689008376AD /* NetworkConfig.swift */,
+				652DB56B2BE28689008376AD /* NetworkError.swift */,
+				652DB5702BE28689008376AD /* NetworkLogger.swift */,
+				652DB56D2BE28689008376AD /* ResponseDecoder.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		652DB57D2BE28957008376AD /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				652DB59E2BE29A2C008376AD /* AppContainer.swift */,
+				652DB57E2BE28962008376AD /* Dto */,
+				652DB55D2BE2637E008376AD /* Models */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		652DB57E2BE28962008376AD /* Dto */ = {
+			isa = PBXGroup;
+			children = (
+				652DB5802BE289BC008376AD /* DtoMapper.swift */,
+				652DB57F2BE28972008376AD /* Response */,
+			);
+			path = Dto;
+			sourceTree = "<group>";
+		};
+		652DB57F2BE28972008376AD /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				652DB5822BE289E9008376AD /* UserResponse.swift */,
+				652DB58C2BE28DEF008376AD /* RepositoryResponse.swift */,
+				652DB5902BE28EA1008376AD /* CommitResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		652DB5972BE29716008376AD /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				652DB59A2BE29841008376AD /* GetUsernameUseCase.swift */,
+				652DB59C2BE29848008376AD /* SaveUsernameUseCase.swift */,
+				652DB5982BE2972F008376AD /* GetUserDataUseCase.swift */,
+				652DB5A82BE2A701008376AD /* GetRepositoriesUseCase.swift */,
+				652DB5AA2BE2A70E008376AD /* GetCommitsUseCase.swift */,
+			);
+			path = UseCase;
 			sourceTree = "<group>";
 		};
 		65E4C6D12BE2487C00181D90 = {
@@ -156,12 +290,11 @@
 			isa = PBXGroup;
 			children = (
 				652DB5652BE26BA1008376AD /* Extensions */,
-				652DB5612BE2639B008376AD /* Networking */,
-				652DB55D2BE2637E008376AD /* Models */,
+				652DB5612BE2639B008376AD /* Api */,
+				652DB57D2BE28957008376AD /* Data */,
 				652DB55E2BE26385008376AD /* ViewModels */,
 				652DB5622BE263B5008376AD /* Views */,
 				65E4C6DD2BE2487C00181D90 /* GitKitApp.swift */,
-				65E4C6DF2BE2487C00181D90 /* LoginView.swift */,
 				65E4C6E12BE2487D00181D90 /* Assets.xcassets */,
 				65E4C6E32BE2487D00181D90 /* Preview Content */,
 			);
@@ -330,10 +463,41 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				652DB5722BE28689008376AD /* Endpoint.swift in Sources */,
+				652DB5AB2BE2A70E008376AD /* GetCommitsUseCase.swift in Sources */,
+				652DB5992BE2972F008376AD /* GetUserDataUseCase.swift in Sources */,
+				652DB5952BE294BD008376AD /* UserLocalDataSource.swift in Sources */,
+				652DB5812BE289BC008376AD /* DtoMapper.swift in Sources */,
+				652DB5892BE28D72008376AD /* UserRepository.swift in Sources */,
+				652DB5AF2BE2A7F9008376AD /* CommitsViewModel.swift in Sources */,
+				652DB5712BE28689008376AD /* NetworkError.swift in Sources */,
+				652DB5742BE28689008376AD /* NetworkConfig.swift in Sources */,
+				652DB5932BE28EDE008376AD /* CommitModel.swift in Sources */,
+				652DB5A92BE2A701008376AD /* GetRepositoriesUseCase.swift in Sources */,
+				652DB5A72BE2A59E008376AD /* ReposRepository.swift in Sources */,
+				652DB59B2BE29841008376AD /* GetUsernameUseCase.swift in Sources */,
+				652DB57A2BE287D3008376AD /* AFDataResponse+.swift in Sources */,
 				65E4C6E02BE2487C00181D90 /* LoginView.swift in Sources */,
 				652DB5672BE26BAD008376AD /* Colors+.swift in Sources */,
 				65E4C6DE2BE2487C00181D90 /* GitKitApp.swift in Sources */,
+				652DB5A32BE2A173008376AD /* UserDetailsView.swift in Sources */,
+				652DB59F2BE29A2C008376AD /* AppContainer.swift in Sources */,
+				652DB5912BE28EA1008376AD /* CommitResponse.swift in Sources */,
+				652DB58B2BE28DB4008376AD /* ReposRemoteDataSource.swift in Sources */,
+				652DB59D2BE29848008376AD /* SaveUsernameUseCase.swift in Sources */,
+				652DB58D2BE28DEF008376AD /* RepositoryResponse.swift in Sources */,
+				652DB5852BE28AD9008376AD /* UserModel.swift in Sources */,
+				652DB58F2BE28E94008376AD /* RepositoryModel.swift in Sources */,
+				652DB5AD2BE2A7E6008376AD /* ReposViewModel.swift in Sources */,
 				652DB5642BE263D0008376AD /* AuthViewModel.swift in Sources */,
+				652DB5732BE28689008376AD /* ResponseDecoder.swift in Sources */,
+				652DB57B2BE287D3008376AD /* Dictionary+.swift in Sources */,
+				652DB5832BE289E9008376AD /* UserResponse.swift in Sources */,
+				652DB5692BE28112008376AD /* UserRemoteDataSource.swift in Sources */,
+				652DB5752BE28689008376AD /* AlamofireService.swift in Sources */,
+				652DB5762BE28689008376AD /* NetworkLogger.swift in Sources */,
+				652DB5A52BE2A305008376AD /* View+.swift in Sources */,
+				652DB57C2BE287D3008376AD /* Encodable+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

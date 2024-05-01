@@ -12,7 +12,7 @@ struct GitKitApp: App {
     var body: some Scene {
         WindowGroup {
             LoginView()
-                .environmentObject(AuthViewModel())
+                .environmentObject(AppContainer.provideAuthViewModel())
         }
     }
 }

@@ -9,6 +9,9 @@ import SwiftUI
 
 struct LoginView: View {
     
+    @State private var loginFailed = false
+    @State private var goToUserDetails = false
+    
     @EnvironmentObject var authViewModel: AuthViewModel
     
     var body: some View {
@@ -40,14 +43,32 @@ struct LoginView: View {
                 .disabled(authViewModel.username.isEmpty)
         }
         .padding()
+        .alert("Error", isPresented: $loginFailed) {
+            Button("OK") {
+                authViewModel.clearError()
+            }
+        } message: {
+            Text(authViewModel.loginError)
+        }
+        .navigate(to: UserDetailsView()
+            .environmentObject(AppContainer.provideAuthViewModel())
+            .environmentObject(AppContainer.provideReposViewModel())
+            .environmentObject(AppContainer.provideCommitsViewModel()),
+                  when: $goToUserDetails)
     }
     
     func login() {
-        authViewModel.login()
+        authViewModel.login { success in
+            if success {
+                goToUserDetails = true
+            } else {
+                loginFailed = true
+            }
+        }
     }
 }
 
 #Preview {
     LoginView()
-        .environmentObject(AuthViewModel())
+        .environmentObject(AppContainer.provideAuthViewModel())
 }
