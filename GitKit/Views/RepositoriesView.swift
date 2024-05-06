@@ -29,7 +29,7 @@ struct RepositoriesView: View {
                             Text(repository.defaultBranch ?? "")
                         })
                         NavigationLink(
-                            "See Commits", destination: CommitsView(commitsViewModel: AppContainer.provideCommitsViewModel(repo: repository.name ?? ""))
+                            "See Commits", destination: CommitsView(repo: repository.name ?? "")
                         )
                     }.padding(.bottom)
                 }

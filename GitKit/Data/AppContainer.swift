@@ -86,8 +86,8 @@ final class AppContainer {
                               getUsernameUseCase: provideGetUsernameUseCase())
     }
     
-    static func provideCommitsViewModel(repo: String) -> CommitsViewModel {
-        return CommitsViewModel(repo: repo, getCommitsUseCase: provideGetCommitsUseCase(),
+    static func provideCommitsViewModel() -> CommitsViewModel {
+        return CommitsViewModel(getCommitsUseCase: provideGetCommitsUseCase(),
                                 getUsernameUseCase: provideGetUsernameUseCase())
     }
 }

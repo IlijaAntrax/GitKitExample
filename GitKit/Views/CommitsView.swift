@@ -10,7 +10,9 @@ import SwiftUI
 
 struct CommitsView: View {
     
-    @StateObject var commitsViewModel: CommitsViewModel
+    var repo: String
+    
+    @StateObject var commitsViewModel: CommitsViewModel = AppContainer.provideCommitsViewModel()
     
     var body: some View {
         VStack {
@@ -30,9 +32,12 @@ struct CommitsView: View {
             }
         }
         .padding()
+        .onAppear(perform: {
+            commitsViewModel.getCommits(repoName: repo)
+        })
     }
 }
 
 #Preview {
-    CommitsView(commitsViewModel: AppContainer.provideCommitsViewModel(repo: "Test"))
+    CommitsView(repo: "Test")
 }
