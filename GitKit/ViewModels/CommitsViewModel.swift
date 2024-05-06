@@ -14,27 +14,34 @@ final class CommitsViewModel: ObservableObject {
     private let getCommitsUseCase: GetCommitsUseCase
     private let getUsernameUseCase: GetUsernameUseCase
     
+    private let repoName: String
+    
     // MARK: - Public Properties
     // Commits
+    @Published var commits: [CommitModel] = []
     
     // MARK: - Init methods
     
-    init(getCommitsUseCase: GetCommitsUseCase,
+    init(repo: String,
+         getCommitsUseCase: GetCommitsUseCase,
          getUsernameUseCase: GetUsernameUseCase) {
+        self.repoName = repo
         self.getCommitsUseCase = getCommitsUseCase
         self.getUsernameUseCase = getUsernameUseCase
+        
+        getCommits()
     }
     
     // MARK: - Public Methods
     
-    func getCommits(repo: String, handler: @escaping (Bool) -> Void) { // TODO: Add pagination
+    func getCommits() { // TODO: Add pagination
         guard let username = getUsernameUseCase.invoke() else { return }
-        getCommitsUseCase.invoke(username: username, repo: repo) { result in
+        getCommitsUseCase.invoke(username: username, repo: repoName) { result in
             switch result {
             case .success(let model):
-                handler(true)
-            case .failure(let err):
-                handler(false)
+                self.commits = model
+            case .failure(_):
+                break
             }
         }
     }

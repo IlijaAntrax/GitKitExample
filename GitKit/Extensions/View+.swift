@@ -18,12 +18,12 @@ extension View {
             ZStack {
                 self
                     .navigationBarTitle("")
-                    .navigationBarHidden(false)
+                    .navigationBarHidden(true)
 
                 NavigationLink(
                     destination: view
                         .navigationBarTitle("")
-                        .navigationBarHidden(false),
+                        .navigationBarHidden(true),
                     isActive: binding
                 ) {
                     EmptyView()
@@ -31,5 +31,22 @@ extension View {
             }
         }
         .navigationViewStyle(.stack)
+    }
+    
+    func navigateToNext<NewView: View>(view: NewView, when binding: Binding<Bool>) -> some View {
+        ZStack {
+            self
+                .navigationBarTitle("")
+                .navigationBarHidden(false)
+
+            NavigationLink(
+                destination: view
+                    .navigationBarTitle("")
+                    .navigationBarHidden(false),
+                isActive: binding
+            ) {
+                EmptyView()
+            }
+        }
     }
 }

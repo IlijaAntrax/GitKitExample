@@ -40,6 +40,10 @@
 		652DB5AB2BE2A70E008376AD /* GetCommitsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652DB5AA2BE2A70E008376AD /* GetCommitsUseCase.swift */; };
 		652DB5AD2BE2A7E6008376AD /* ReposViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652DB5AC2BE2A7E6008376AD /* ReposViewModel.swift */; };
 		652DB5AF2BE2A7F9008376AD /* CommitsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652DB5AE2BE2A7F9008376AD /* CommitsViewModel.swift */; };
+		6575571E2BE8F08700072C9A /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6575571D2BE8F08700072C9A /* UserViewModel.swift */; };
+		657557202BE8FA5E00072C9A /* RepositoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6575571F2BE8FA5E00072C9A /* RepositoriesView.swift */; };
+		657557222BE8FA6800072C9A /* CommitsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657557212BE8FA6800072C9A /* CommitsView.swift */; };
+		657557242BE9164900072C9A /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657557232BE9164900072C9A /* String+.swift */; };
 		65E4C6DE2BE2487C00181D90 /* GitKitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E4C6DD2BE2487C00181D90 /* GitKitApp.swift */; };
 		65E4C6E02BE2487C00181D90 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E4C6DF2BE2487C00181D90 /* LoginView.swift */; };
 		65E4C6E22BE2487D00181D90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65E4C6E12BE2487D00181D90 /* Assets.xcassets */; };
@@ -102,6 +106,10 @@
 		652DB5AA2BE2A70E008376AD /* GetCommitsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCommitsUseCase.swift; sourceTree = "<group>"; };
 		652DB5AC2BE2A7E6008376AD /* ReposViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposViewModel.swift; sourceTree = "<group>"; };
 		652DB5AE2BE2A7F9008376AD /* CommitsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitsViewModel.swift; sourceTree = "<group>"; };
+		6575571D2BE8F08700072C9A /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		6575571F2BE8FA5E00072C9A /* RepositoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesView.swift; sourceTree = "<group>"; };
+		657557212BE8FA6800072C9A /* CommitsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitsView.swift; sourceTree = "<group>"; };
+		657557232BE9164900072C9A /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
 		65E4C6DA2BE2487C00181D90 /* GitKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65E4C6DD2BE2487C00181D90 /* GitKitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitKitApp.swift; sourceTree = "<group>"; };
 		65E4C6DF2BE2487C00181D90 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -155,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				652DB5632BE263D0008376AD /* AuthViewModel.swift */,
+				6575571D2BE8F08700072C9A /* UserViewModel.swift */,
 				652DB5AC2BE2A7E6008376AD /* ReposViewModel.swift */,
 				652DB5AE2BE2A7F9008376AD /* CommitsViewModel.swift */,
 			);
@@ -196,6 +205,8 @@
 			children = (
 				65E4C6DF2BE2487C00181D90 /* LoginView.swift */,
 				652DB5A22BE2A173008376AD /* UserDetailsView.swift */,
+				6575571F2BE8FA5E00072C9A /* RepositoriesView.swift */,
+				657557212BE8FA6800072C9A /* CommitsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -208,6 +219,7 @@
 				652DB5792BE287D3008376AD /* Encodable+.swift */,
 				652DB5662BE26BAD008376AD /* Colors+.swift */,
 				652DB5A42BE2A305008376AD /* View+.swift */,
+				657557232BE9164900072C9A /* String+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -473,8 +485,11 @@
 				652DB5712BE28689008376AD /* NetworkError.swift in Sources */,
 				652DB5742BE28689008376AD /* NetworkConfig.swift in Sources */,
 				652DB5932BE28EDE008376AD /* CommitModel.swift in Sources */,
+				657557242BE9164900072C9A /* String+.swift in Sources */,
 				652DB5A92BE2A701008376AD /* GetRepositoriesUseCase.swift in Sources */,
+				657557202BE8FA5E00072C9A /* RepositoriesView.swift in Sources */,
 				652DB5A72BE2A59E008376AD /* ReposRepository.swift in Sources */,
+				657557222BE8FA6800072C9A /* CommitsView.swift in Sources */,
 				652DB59B2BE29841008376AD /* GetUsernameUseCase.swift in Sources */,
 				652DB57A2BE287D3008376AD /* AFDataResponse+.swift in Sources */,
 				65E4C6E02BE2487C00181D90 /* LoginView.swift in Sources */,
@@ -488,6 +503,7 @@
 				652DB58D2BE28DEF008376AD /* RepositoryResponse.swift in Sources */,
 				652DB5852BE28AD9008376AD /* UserModel.swift in Sources */,
 				652DB58F2BE28E94008376AD /* RepositoryModel.swift in Sources */,
+				6575571E2BE8F08700072C9A /* UserViewModel.swift in Sources */,
 				652DB5AD2BE2A7E6008376AD /* ReposViewModel.swift in Sources */,
 				652DB5642BE263D0008376AD /* AuthViewModel.swift in Sources */,
 				652DB5732BE28689008376AD /* ResponseDecoder.swift in Sources */,

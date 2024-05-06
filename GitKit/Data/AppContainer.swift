@@ -75,13 +75,19 @@ final class AppContainer {
                              getUserDataUseCase: provideGetUserDataUseCase())
     }
     
+    static func provideUserViewModel() -> UserViewModel {
+        return UserViewModel(getUsernameUseCase: provideGetUsernameUseCase(),
+                             saveUsernameUseCase: provideSaveUsernameUseCase(),
+                             getUserDataUseCase: provideGetUserDataUseCase())
+    }
+    
     static func provideReposViewModel() -> ReposViewModel {
         return ReposViewModel(getReposUseCase: provideGetReposUseCase(),
                               getUsernameUseCase: provideGetUsernameUseCase())
     }
     
-    static func provideCommitsViewModel() -> CommitsViewModel {
-        return CommitsViewModel(getCommitsUseCase: provideGetCommitsUseCase(),
+    static func provideCommitsViewModel(repo: String) -> CommitsViewModel {
+        return CommitsViewModel(repo: repo, getCommitsUseCase: provideGetCommitsUseCase(),
                                 getUsernameUseCase: provideGetUsernameUseCase())
     }
 }

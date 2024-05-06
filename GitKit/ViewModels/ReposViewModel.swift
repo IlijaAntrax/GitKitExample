@@ -16,6 +16,7 @@ final class ReposViewModel: ObservableObject {
     
     // MARK: - Public Properties
     // Repos
+    @Published var repositories: [RepositoryModel] = []
     
     // MARK: - Init methods
     
@@ -23,18 +24,20 @@ final class ReposViewModel: ObservableObject {
          getUsernameUseCase: GetUsernameUseCase) {
         self.getReposUseCase = getReposUseCase
         self.getUsernameUseCase = getUsernameUseCase
+        
+        getRepositories()
     }
     
     // MARK: - Public Methods
     
-    func getRepositories(handler: @escaping (Bool) -> Void) { // TODO: Add pagination
+    func getRepositories() { // TODO: Add pagination
         guard let username = getUsernameUseCase.invoke() else { return }
         getReposUseCase.invoke(username: username) { result in
             switch result {
             case .success(let model):
-                handler(true)
-            case .failure(let err):
-                handler(false)
+                self.repositories = model
+            case .failure(_):
+                break
             }
         }
     }

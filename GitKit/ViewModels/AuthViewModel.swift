@@ -32,12 +32,16 @@ final class AuthViewModel: ObservableObject {
     
     // MARK: - Public Properties
     
+    var isLoggedIn: Bool {
+        let username = getUsernameUseCase.invoke()
+        return username != nil && !username!.isEmpty
+    }
+    
     func login(handler: @escaping (Bool) -> Void) {
         guard !username.isEmpty else { return }
         getUserDataUseCase.invoke(username: username) { result in
             switch result {
-            case .success(let model):
-                // TODO: Continue on next screen and save user
+            case .success(_):
                 self.saveUsernameUseCase.invoke(username: self.username)
                 handler(true)
             case .failure(let err):
@@ -45,11 +49,6 @@ final class AuthViewModel: ObservableObject {
                 handler(false)
             }
         }
-    }
-    
-    func logout() {
-        saveUsernameUseCase.invoke(username: nil)
-        // TODO: Navigate to login
     }
     
     func clearError() {
